@@ -1,14 +1,17 @@
 <template>
   <Header />
+  <About />
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import About from './components/About.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    About
   }
 }
 </script>
@@ -21,6 +24,7 @@ export default {
 body{
   background: #080808;
   color:#fff;
+  font-family: 'Poppins', sans-serif;
 }
 a{
   color: inherit;
