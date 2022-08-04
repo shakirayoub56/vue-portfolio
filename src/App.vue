@@ -4,6 +4,7 @@
   <Services />
   <Portfolio />
   <Contact />
+  <a href="#" id="moveTop" class="hide"><i class="fa-solid fa-circle-arrow-up"></i></a>
 </template>
 
 <script>
@@ -12,6 +13,15 @@ import About from './components/About.vue'
 import Services from './components/Services.vue'
 import Portfolio from './components/Portfolio.vue'
 import Contact from './components/Contact.vue'
+
+addEventListener('scroll', () => {
+  if(window.scrollY > 300){
+    document.getElementById('moveTop').classList.remove('hide')
+  }
+  else{
+    document.getElementById('moveTop').classList.add('hide')
+  }
+});
 
 export default {
   name: 'App',
@@ -30,6 +40,38 @@ export default {
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #262626; 
+}
+::-webkit-scrollbar-thumb {
+  background: #ff004f; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fa417c; 
+}
+
+.hide{
+  display: none;
+}
+#moveTop{
+  position: fixed;
+  z-index: 100;
+  font-size: 25px;
+  cursor: pointer;
+  right: 20px;
+  bottom: 25px;
+}
+#moveTop:hover{
+  color: #ff004f;
+}
+
 .container{
   padding: 10px 10%;
 }

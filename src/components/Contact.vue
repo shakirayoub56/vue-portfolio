@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Portfolio of Muhammad Tahir Ali | Copyright <span id="copyright-year">{{currentYear}}</span></p>
+            <p>Portfolio of Muhammad Tahir Ali | Copyright <span>{{currentYear}}</span></p>
         </div>
     </div>
 </template>
@@ -96,13 +96,12 @@ form .btn2{
     margin: 20px 0;
     cursor: pointer;
 }
-.copyright{
-    width: 100%;
+.copyright p{
     text-align: center;
-    padding: 25px 0;
+    padding: 15px 0;
     background: #262626;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 20px;
     letter-spacing: .08rem;
 }

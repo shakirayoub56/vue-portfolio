@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 #portfolio{
-    padding: 25px 0 60px;
+    padding: 15px 0 60px;
 }
 .work-list{
     display: grid;
@@ -50,7 +50,7 @@ export default {
     margin-top: 50px;
 }
 .work{
-    height: 450px;   /* Added by Me */
+    height: 400px;   /* Added by Me */
     border-radius: 10px;
     position: relative;
     overflow: hidden;

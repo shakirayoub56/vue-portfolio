@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 #services{
-    padding: 30px 0;
+    padding: 30px 0 25px;
 }
 .services-list{
     display: grid;
