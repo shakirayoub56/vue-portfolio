@@ -1,18 +1,20 @@
 <template>
-  <div class="header">
+  <div id="header">
     <div class="container">
       <nav>
         <img src="../assets/logo.png" alt="logo">
-        <ul>
+        <ul id="sidemenu">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" @click="closeMenu()"></i>
         </ul>
+        <i class="fas fa-bars" @click="openMenu()"></i>
       </nav>
       <div class="header-text">
-        <p>UI/UX Designer</p>
+        <p>MERN Stack Developer</p>
         <h1>Hi, I'm <span>Tahir Ali</span><br/> from Pakistan</h1>
       </div>
     </div>
@@ -22,19 +24,32 @@
 <script>
 export default {
   name: 'Header',
-  props: {
-    
-  }
+  methods: {
+    openMenu(){
+      document.querySelector('ul').classList.add('menuSidebar')
+    },
+    closeMenu(){
+      document.querySelector('ul').classList.remove('menuSidebar')
+    },
+  },
 }
 </script>
 
 <style scoped>
-.header{
+.menuSidebar{
+  position: fixed;
+  right: 0;
+}
+#header{
   width: 100%;
   height: 100vh;
   background-image: url('.././assets/background.png');
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
+}
+nav .fas{
+  display: none;
 }
 .container{
   /* padding: 10px 10%; */
@@ -80,5 +95,44 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
   color: #ff004f;
+}
+@media only screen and (max-width: 600px){
+  #header{
+    background-image: url('../assets/phone-background.png');
+  }
+  .header-text{
+    margin-top: 80%;
+    font-size: 16px;
+  }
+  .header-text h1{
+    font-size: 30px;
+  }
+  nav .fas{
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  nav ul{
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    display: block;
+    right: -175px;
+    width: 175px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
 }
 </style>
