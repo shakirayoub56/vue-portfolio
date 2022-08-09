@@ -7,9 +7,9 @@
                     <p><i class="fa-solid fa-envelope"></i>tahiralidc@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+92 320 2238490</p>
                     <div class="social-icons">
-                        <a href="https://github.com/TahirAli32"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://linkedin.com/in/tahirali32"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
+                        <a target="_blank" href="https://github.com/TahirAli32"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://linkedin.com/in/tahirali32"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
                     </div>
                     <a href="../assets/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Portfolio of Muhammad Tahir Ali | Copyright <span>{{currentYear}}</span></p>
+            <p>Portfolio of <span>Muhammad Tahir Ali</span> | Copyright {{currentYear}}</p>
         </div>
     </div>
 </template>
@@ -37,7 +37,7 @@ export default{
     name: 'Contact',
     data() {
         return {
-        currentYear
+            currentYear
     }
 }
 }
@@ -77,7 +77,7 @@ export default{
     background-color: #ff004f;
 }
 .contact-right form{
-    width: 100%;
+    width: 97%;
 }
 form input, form textarea{
     width: 100%;
@@ -98,12 +98,15 @@ form .btn2{
 }
 .copyright p{
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
     background: #262626;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 20px;
     letter-spacing: .08rem;
+}
+.copyright span{
+    color: #ff004f
 }
 @media only screen and (max-width: 600px){
     .row{

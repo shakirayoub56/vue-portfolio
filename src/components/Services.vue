@@ -44,6 +44,8 @@ export default {
 }
 .services-list div{
     background: #262626;
+    /* width: 250px;
+    height: 250px; */
     padding: 40px;
     font-size: 13px;
     font-weight: 300;

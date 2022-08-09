@@ -51,7 +51,7 @@ html {
   box-shadow: inset 0 0 5px #262626; 
 }
 ::-webkit-scrollbar-thumb {
-  background: #ff004f; 
+  background: #ff004d; 
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #fa417c; 
@@ -63,10 +63,10 @@ html {
 #moveTop{
   position: fixed;
   z-index: 100;
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   right: 20px;
-  bottom: 25px;
+  bottom: 20px;
 }
 #moveTop:hover{
   color: #ff004f;

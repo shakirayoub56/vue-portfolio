@@ -3,15 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-            <img src="../assets/user.png" alt="">
+            <!-- <img src="../assets/user.png" alt=""> -->
+            <img src="../assets/about-coat.jpg" alt="">
         </div>
         <div class="about-col-2">
             <h1 class="subtitle">About Me</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt delectus magnam assumenda omnis quibusdam dolorem tempore molestias vel impedit, obcaecati repellendus temporibus inventore dolore fugiat natus mollitia cupiditate voluptatum !</p>
             <div class="tab-titles">
               <p class="tab-links active-link" @click="(event) => openTab('skills', event)">Skills</p>
-              <p class="tab-links" @click="(event) => openTab('experience', event)">Experience</p>
               <p class="tab-links" @click="(event) => openTab('education', event)">Education</p>
+              <p class="tab-links" @click="(event) => openTab('experience', event)">Experience</p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -20,19 +21,19 @@
                 <li><span>App Development</span><br/>Building Android/IOS Applications</li>
               </ul>
             </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>2021 - Current</span><br/>UI/UX Design Training at ET Institute</li>
-                <li><span>2019-2021</span><br/>Team Lead at Netsol Ltd.</li>
-                <li><span>2018-2019</span><br/>Internship at Netsol Ltd</li>
-              </ul>
-            </div>
             <div class="tab-contents" id="education">
               <ul>
                 <li><span>Started in 2021</span><br/>MERN Stack Course from SMIT Karachi</li>
                 <li><span>2020 - 2023<sub>(Expected)</sub></span><br/>BSCS from University of Karachi</li>
                 <li><span>Completed in 2019</span><br/>Intermediate in Pre-Engineering with A Grade</li>
                 <li><span>Completed in 2017</span><br/>Matriculation in Computer Science with A1 Grade</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2021 - Current</span><br/>UI/UX Design Training at ET Institute</li>
+                <li><span>2019-2021</span><br/>Team Lead at Netsol Ltd.</li>
+                <li><span>2018-2019</span><br/>Internship at Netsol Ltd</li>
               </ul>
             </div>
         </div>
@@ -129,7 +130,7 @@ export default {
     margin-bottom: 15px;
   }
   .about-col-1 img{
-    width: 50%;
+    width: 100%;
   }
   .about-col-2{
     font-size: 15px;

@@ -43,7 +43,8 @@ export default {
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url('.././assets/background.png');
+  /* background-image: url('.././assets/background.png'); */
+  background-image: url('.././assets/background-coat-back.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -98,7 +99,8 @@ nav ul li a:hover::after{
 }
 @media only screen and (max-width: 600px){
   #header{
-    background-image: url('../assets/phone-background.png');
+    /* background-image: url('../assets/phone-background.png'); */
+    background-image: url('../assets/phone-background-coat.jpg');
   }
   .header-text{
     margin-top: 80%;
