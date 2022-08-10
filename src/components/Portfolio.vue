@@ -41,26 +41,26 @@
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/TahirAli32" target="_blank" class="btn">See More</a>
+            <!-- <a href="https://github.com/TahirAli32" target="_blank" class="btn">See More</a> -->
+            
+            <router-link to="/projects"><p class="btn">See More</p></router-link>
         </div>
-        <ProjectsPopup />
     </div>
 </template>
 
 <script>
-import ProjectsPopup from './ProjectsPopup.vue'
-
 export default {
     name: 'Portfolio',
-    components: {
-        ProjectsPopup
-  }
 }
 </script>
 
 <style scoped>
 #portfolio{
     padding: 15px 0 60px;
+    min-height: max-content;
+}
+.btn{
+    cursor: pointer;
 }
 .work-list{
     display: grid;

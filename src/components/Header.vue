@@ -2,7 +2,7 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img src="../assets/logo.png" alt="logo">
+        <a href="/"><img src="../assets/logo.png" alt="logo"></a>
         <ul id="sidemenu">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>

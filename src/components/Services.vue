@@ -5,21 +5,19 @@
             <div class="services-list">
                 <div>
                     <i class="fas fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis temporibus ea dolorum quos molestiae? Tempore illum rerum dolores itaque voluptate?</p>
-                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Front-End Web Design</h2>
+                    <p>UI/UX Designing of Web App using Vanilla Js/React Js/Vue Js</p>
+                    <!-- <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a> -->
                 </div>
                 <div>
                     <i class="fas fa-crop-alt"></i>
                     <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis temporibus ea dolorum quos molestiae? Tempore illum rerum dolores itaque voluptate?</p>
-                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <p>Back-end Logic Writing enabling server to interact with user using UI</p>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis temporibus ea dolorum quos molestiae? Tempore illum rerum dolores itaque voluptate?</p>
-                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    <h2>Mobile App Design</h2>
+                    <p>Coming Soon</p>
                 </div>
             </div>
         </div>
@@ -61,8 +59,12 @@ export default {
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list a{
+.services-list p{
+    margin-bottom: 15px;
+}
+/* .services-list a{
     color: #fff;
+    height: 0;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
@@ -70,7 +72,7 @@ export default {
 .services-list a i{
     padding-left: 2px;
     font-size: 11px;
-}
+} */
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);

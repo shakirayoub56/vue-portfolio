@@ -8,7 +8,7 @@
         </div>
         <div class="about-col-2">
             <h1 class="subtitle">About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt delectus magnam assumenda omnis quibusdam dolorem tempore molestias vel impedit, obcaecati repellendus temporibus inventore dolore fugiat natus mollitia cupiditate voluptatum !</p>
+            <p>I'm a MERN Stack Developer based in Karachi, Pakistan. I am in 3rd Year of Bachelors of Computer Sciences doing from University of Karachi. My objective is simply to be the best web developer that I can be and to contribute to the technology industry.</p>
             <div class="tab-titles">
               <p class="tab-links active-link" @click="(event) => openTab('skills', event)">Skills</p>
               <p class="tab-links" @click="(event) => openTab('education', event)">Education</p>
@@ -16,9 +16,9 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br/>Designing Web/App Interface</li>
-                <li><span>Web Development</span><br/>Building Web Applications</li>
-                <li><span>App Development</span><br/>Building Android/IOS Applications</li>
+                <li><span>Front-end Developer</span><br/>Building Single Page Application using Vanilla JS, React/Next JS, Vue JS</li>
+                <li><span>Back-end Developer</span><br/>Building Backend Server for Web and Mobile Applications</li>
+                <li><span>Other Programming Languages</span><br/>Java (Android Studio), Python(Django)</li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
@@ -31,9 +31,7 @@
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2021 - Current</span><br/>UI/UX Design Training at ET Institute</li>
-                <li><span>2019-2021</span><br/>Team Lead at Netsol Ltd.</li>
-                <li><span>2018-2019</span><br/>Internship at Netsol Ltd</li>
+                <li><span>Fresh</span><br/>MERN Stack Developer</li>
               </ul>
             </div>
         </div>
