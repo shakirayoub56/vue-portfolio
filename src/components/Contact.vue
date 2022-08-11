@@ -12,13 +12,13 @@
                         <a target="_blank" href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
                         <a target="_blank" href="https://wa.me/03202238490"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <a href="../assets/cv.pdf" download class="btn btn2">Download CV</a>
+                    <a href="https://my.indeed.com/p/muhammadtahira-03jld9n" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form @submit.prevent="handleSubmit()" name="contact" netlify>
-                        <input type="text" name="Name" placeholder="Your Full Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <form @submit.prevent="handleSubmit()" name="contactForm" netlify>
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button class="btn btn2" type="submit">Send Message</button>
                     </form>
                 </div>
@@ -43,8 +43,10 @@ export default{
     },
     methods: {
         handleSubmit(){
-            alert('Message sent successfully')
-            // alert("Form is not accepting any data at the moment. Consider contacting on email")
+            let form = document.forms['contactForm']
+            form.reset()
+            // alert('Message sent successfully')
+            alert("Form is not accepting any data at the moment. Consider contacting on email")
         }
     }
 }

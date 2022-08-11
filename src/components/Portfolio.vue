@@ -38,7 +38,6 @@
                 </div>
             </div>
             <!-- <a href="https://github.com/TahirAli32" target="_blank" class="btn">See More</a> -->
-            
             <router-link class="btn" to="/projects"><p>See More</p></router-link>
         </div>
     </div>
