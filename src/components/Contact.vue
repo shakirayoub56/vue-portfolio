@@ -16,9 +16,9 @@
                 </div>
                 <div class="contact-right">
                     <form @submit.prevent="handleSubmit()" name="contact" netlify>
-                        <input type="text" name="Name" placeholder="Your Full Name" >
-                        <input type="email" name="Email" placeholder="Your Email" >
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="text" name="Name" placeholder="Your Full Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button class="btn btn2" type="submit">Send Message</button>
                     </form>
                 </div>
