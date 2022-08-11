@@ -10,6 +10,7 @@
                         <a target="_blank" href="https://github.com/TahirAli32"><i class="fa-brands fa-github"></i></a>
                         <a target="_blank" href="https://linkedin.com/in/tahirali32"><i class="fa-brands fa-linkedin"></i></a>
                         <a target="_blank" href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
+                        <a target="_blank" href="https://wa.me/03202238490"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                     <a href="../assets/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
