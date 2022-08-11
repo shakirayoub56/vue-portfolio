@@ -12,7 +12,7 @@
                         <a target="_blank" href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
                         <a target="_blank" href="https://wa.me/03202238490"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <a href="../assets/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    <a href="../assets/cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form @submit.prevent="handleSubmit()">
