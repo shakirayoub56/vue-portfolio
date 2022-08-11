@@ -4,111 +4,14 @@
         <div class="modalContainer">
             <router-link to="/#portfolio"><div class="backIcon"><i class="fa-solid fa-arrow-left"></i>Go Back</div></router-link>
             <div class="work-list">
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
+                <div class="work" v-for="project in projects" :key="project">
+                    <img :src="project.img" alt="Project">
                     <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
+                        <h3>{{project.name}}</h3>
+                        <p>{{project.desc}}</p>
                         <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <div class="bg-img"></div>
-                    <img src="../assets/yt-downloader.jpg" alt="work">
-                    <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a target="_blank" :href=project.code><i class="fa-solid fa-code"></i></a>
+                            <a target="_blank" :href=project.live><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -119,8 +22,14 @@
 </template>
 
 <script>
+import {projects} from '../data'
 export default {
     name: 'ProjectsPopup',
+    data() {
+        return {
+            projects
+        }
+    }
 }
 </script>
 <style scoped>
@@ -185,6 +94,9 @@ export default {
     text-align: center;
     font-size: 14px;
     transition: height .5s;
+}
+.layer p {
+    padding: 0 5px;
 }
 .layer h3{
     font-weight: 500;
