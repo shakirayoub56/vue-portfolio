@@ -15,7 +15,7 @@
                     <a href="../assets/cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form @submit.prevent="handleSubmit()">
+                    <form @submit.prevent="handleSubmit()" name="contact" netlify>
                         <input type="text" name="Name" placeholder="Your Full Name" >
                         <input type="email" name="Email" placeholder="Your Email" >
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -43,8 +43,8 @@ export default{
     },
     methods: {
         handleSubmit(){
-            console.log('done');
-            alert("Form is not accepting any data at the moment. Consider contacting on email")
+            alert('Message sent successfully')
+            // alert("Form is not accepting any data at the moment. Consider contacting on email")
         }
     }
 }
