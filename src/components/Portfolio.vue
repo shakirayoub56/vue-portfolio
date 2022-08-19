@@ -15,13 +15,13 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="../assets/projects/no-img.jpg" alt="work">
+                    <img src="../assets/projects/quiz.jpg" alt="work">
                     <div class="layer">
-                        <h3>Covid 19 Case Tracker</h3>
-                        <p>Android Application build on Java.</p>
+                        <h3>Quiz App</h3>
+                        <p>Fully Functional Quiz App built on Vanilla JS. Authentication is done using Browser Local Storage.</p>
                         <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Covid19App"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://drive.google.com/file/d/1Ov-bgESvsbFRXokzi7m7cc5icM_6PXJK/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a target="_blank" href="https://github.com/TahirAli32/quiz-app-vanilla-js"><i class="fa-solid fa-code"></i></a>
+                            <a target="_blank" href="https://quiz-app-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <a href="https://github.com/TahirAli32" target="_blank" class="btn">See More</a> -->
             <router-link class="btn" to="/projects"><p>See More</p></router-link>
         </div>
     </div>
@@ -68,11 +67,12 @@ export default {
 .work{
     height: 250px;
     width: 350px;
-    margin: 20px;
+    margin: 20px auto;
     border: .15rem solid #ff004f;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+
 }
 .work img{
     width: 100%;
@@ -123,8 +123,22 @@ export default {
     height: 100%;
 }
 @media only screen and (max-width: 600px){
+    .work-list{
+        margin-top: 20px;
+        padding: 0;
+    }
     .work{
-        height: 350px;
+        height: 225px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .btn{
+        margin-top: 25px;
+    }
+    .layer{
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.6), #ff005167);
     }
 }
 </style>

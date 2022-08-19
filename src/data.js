@@ -8,6 +8,14 @@ export const projects = [
         live: 'https://tahirali-dc.netlify.app/'
     },
     {
+        name: 'Quiz App',
+        technology: 'Vanilla JS, HTML, CSS',
+        desc: 'Fully Functional Quiz App built on Vanilla JS. Authentication is done using Browser Local Storage',
+        img: require('@/assets/projects/quiz.jpg'),
+        code: 'https://github.com/TahirAli32/quiz-app-vanilla-js',
+        live: 'https://quiz-app-by-dc.netlify.app/'
+    },
+    {
         name: 'Classroom',
         technology: 'Next JS, MongoDB',
         desc: 'Create Classroom, post Assignments, Mark Grades of Student. Currently in Development',

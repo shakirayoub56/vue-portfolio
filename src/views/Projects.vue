@@ -118,8 +118,16 @@ export default {
     height: 100%;
 }
 @media only screen and (max-width: 600px){
+    .work-list{
+        margin-top: 20px;
+        padding: 0;
+    }
     .work{
-        height: 350px;
+        height: 250px;
+    }
+    .layer{
+        height: 100%;
+        background: linear-gradient(rgba(0,0,0,0.6), #ff005167);
     }
 }
 </style>

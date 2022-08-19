@@ -42,8 +42,6 @@ export default {
 }
 .services-list div{
     background: #262626;
-    /* width: 250px;
-    height: 250px; */
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -62,17 +60,6 @@ export default {
 .services-list p{
     margin-bottom: 15px;
 }
-/* .services-list a{
-    color: #fff;
-    height: 0;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list a i{
-    padding-left: 2px;
-    font-size: 11px;
-} */
 .services-list div:hover{
     background: #ff004f;
     transform: translateY(-10px);
@@ -94,6 +81,12 @@ export default {
     .services-list div, .services-list div a, .services-list div a i {
         font-size: 12px;
         letter-spacing: .01rem;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .services-list{
+        margin-top: 25px;
     }
 }
 </style>

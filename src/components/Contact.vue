@@ -51,6 +51,7 @@ export default{
     }
 }
 </script>
+
 <style scoped>
 .contact-left{
     flex-basis: 35%;
@@ -123,6 +124,9 @@ form .btn2{
     }
     .contact-left{
         margin-bottom: 40px;
+    }
+    .contact-left h1{
+        font-size: 50px;
     }
 }
 </style>
