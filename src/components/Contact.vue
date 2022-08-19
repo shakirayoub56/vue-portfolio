@@ -15,7 +15,7 @@
                     <a href="https://my.indeed.com/p/muhammadtahira-03jld9n" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form @submit.prevent="handleSubmit()" name="contactForm" netlify>
+                    <form @submit.prevent="handleSubmit()" name="contactForm">
                         <input type="text" name="name" placeholder="Your Full Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
