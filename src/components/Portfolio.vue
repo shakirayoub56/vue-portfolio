@@ -4,13 +4,13 @@
             <h1 class="subtitle">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="../assets/projects/yt-downloader.jpg" alt="work">
+                    <img src="../assets/projects/firebase-chat.jpg" alt="work">
                     <div class="layer">
-                        <h3>YouTube Video Downloader</h3>
-                        <p>Frontend is build on ReactJs and Backend is on ExpressJs</p>
+                        <h3>Realtime Chat Application</h3>
+                        <p>Realtime Chat Application built on React JS and Firebase</p>
                         <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/Youtube-Video-Downloader"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://yt-downloader-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a target="_blank" href="https://github.com/TahirAli32/firebase-chat"><i class="fa-solid fa-code"></i></a>
+                            <a target="_blank" href="https://chat-app-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>

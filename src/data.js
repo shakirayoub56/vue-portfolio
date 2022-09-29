@@ -8,6 +8,14 @@ export const projects = [
         live: 'https://tahirali-dc.netlify.app/'
     },
     {
+        name: 'Realtime Chat Application',
+        technology: 'React JS, Firebase',
+        desc: 'Realtime Chat Application built on React JS and Firebase',
+        img: require('@/assets/projects/firebase-chat.jpg'),
+        code: 'https://github.com/TahirAli32/firebase-chat',
+        live: 'https://chat-app-by-dc.netlify.app/'
+    },
+    {
         name: 'Quiz App',
         technology: 'Vanilla JS, HTML, CSS',
         desc: 'Fully Functional Quiz App built on Vanilla JS. Authentication is done using Browser Local Storage',
