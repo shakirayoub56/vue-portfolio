@@ -3,12 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-            <!-- <img src="../assets/user.png" alt=""> -->
             <img src="../assets/about-coat.jpg" alt="">
         </div>
         <div class="about-col-2">
             <h1 class="subtitle">About Me</h1>
-            <p>I'm a MERN Stack Developer based in Karachi, Pakistan. I am in 3rd Year of Bachelors of Computer Sciences doing from University of Karachi. My objective is simply to be the best web developer that I can be and to contribute to the technology industry.</p>
+            <p>I'm a MERN Stack Developer based in Karachi, Pakistan. I am in 3rd Year of my Bachelor of Computer Sciences from the University of Karachi. My objective is simply to be the best web developer that I can be and to contribute to the technology industry.</p>
             <div class="tab-titles">
               <p class="tab-links active-link" @click="(event) => openTab('skills', event)">Skills</p>
               <p class="tab-links" @click="(event) => openTab('education', event)">Education</p>
