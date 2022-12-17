@@ -21,6 +21,9 @@
                         <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
                         <button class="btn btn2" type="submit">Send Message</button>
                     </form>
+                    <div class="confirmMessage none" id="confirmation">
+                        <h2 >Message Sent Successfully</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,6 +35,9 @@
 
 <script>
 
+import { collection, addDoc, Timestamp } from 'firebase/firestore'
+import { db } from '../firebase'
+
 let currentYear = new Date().getFullYear()
 
 export default{
@@ -42,17 +48,29 @@ export default{
         }
     },
     methods: {
-        handleSubmit(){
+        async handleSubmit(){
             let form = document.forms['contactForm']
+            let confirmation = document.getElementById("confirmation")
+            let name = form[0].value
+            let email = form[1].value
+            let message = form[2].value
+            await addDoc(collection(db, "portfolioContact"), { name, email, message, datetime: Timestamp.now() })
             form.reset()
-            // alert('Message sent successfully')
-            alert("Form is not accepting any data at the moment. Consider contacting on email")
+            confirmation.classList.remove("none")
+            form.classList.add("none")
+            setTimeout(() => {
+                confirmation.classList.add("none")
+                form.classList.remove("none")
+            }, 3000)
         }
     }
 }
 </script>
 
 <style scoped>
+.none{
+    display: none;
+}
 .contact-left{
     flex-basis: 35%;
     margin-right: 20px;
@@ -88,6 +106,12 @@ export default{
 }
 .contact-right form{
     width: 97%;
+}
+.confirmMessage h2{
+    color: #ff004f;
+}
+.confirmMessage p{
+    color: #fff;
 }
 form input, form textarea{
     width: 100%;

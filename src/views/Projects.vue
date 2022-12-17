@@ -5,13 +5,13 @@
             <router-link to="/#portfolio"><div class="backIcon"><i class="fa-solid fa-arrow-left"></i>Go Back</div></router-link>
             <div class="work-list">
                 <div class="work" v-for="project in projects" :key="project">
-                    <img :src="project.img" alt="Project">
+                    <img :src="project.imgUrl ? project.imgUrl : require('@/assets/no-img.jpg')" alt="Project">
                     <div class="layer">
                         <h3>{{project.name}}</h3>
                         <p>{{project.desc}}</p>
                         <div style="display: flex;">
-                            <a target="_blank" :href=project.code><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" :href=project.live><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a target="_blank" :href=project.codeUrl><i class="fa-solid fa-code"></i></a>
+                            <a target="_blank" :href="project.liveUrl ? project.liveUrl : '#'"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -22,13 +22,31 @@
 </template>
 
 <script>
-import {projects} from '../data'
+
+import { db } from '../firebase'
+import { collection, query, getDocs } from 'firebase/firestore'
+
 export default {
     name: 'ProjectsPopup',
     data() {
         return {
-            projects
+            projects: []
         }
+    },
+    methods:{
+        async fetchProjects(){
+            let arr = []
+            const q = query(collection(db, "projects"))
+            const querySnapshot = await getDocs(q)
+            querySnapshot.forEach(doc => {
+                arr.push(doc.data())
+            })
+            arr = arr.sort((a,b)=>b.date.seconds-a.date.seconds)
+            this.projects = [...arr]
+        }
+    },
+    mounted() {
+        this.fetchProjects()
     }
 }
 </script>
@@ -58,7 +76,6 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: center; */
     margin: 0 1px;
 }
 .work{

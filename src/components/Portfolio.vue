@@ -3,36 +3,14 @@
         <div class="container">
             <h1 class="subtitle">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="../assets/projects/firebase-chat.jpg" alt="work">
+                <div class="work" v-for="project in projects" :key="project">
+                    <img :src="project.imgUrl" alt="work">
                     <div class="layer">
-                        <h3>Realtime Chat Application</h3>
-                        <p>Realtime Chat Application built on React JS and Firebase</p>
+                        <h3>{{project.name}}</h3>
+                        <p>{{project.desc}}</p>
                         <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/firebase-chat"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://chat-app-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="../assets/projects/quiz.jpg" alt="work">
-                    <div class="layer">
-                        <h3>Quiz App</h3>
-                        <p>Fully Functional Quiz App built on Vanilla JS. Authentication is done using Browser Local Storage.</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/quiz-app-vanilla-js"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://quiz-app-by-dc.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="../assets/projects/classroom.jpg" alt="work">
-                    <div class="layer">
-                        <h3>Classroom</h3>
-                        <p>Built on MERN Stack. Currently in Development</p>
-                        <div style="display: flex;">
-                            <a target="_blank" href="https://github.com/TahirAli32/classroom"><i class="fa-solid fa-code"></i></a>
-                            <a target="_blank" href="https://classroom-by-dc.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a target="_blank" :href=project.codeUrl><i class="fa-solid fa-code"></i></a>
+                            <a target="_blank" :href=project.liveUrl><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -43,9 +21,30 @@
 </template>
 
 <script>
+import { db } from '../firebase'
+import { collection, query, getDocs, where } from 'firebase/firestore'
+
 export default {
     name: 'Portfolio',
+    data() {
+        return {
+            projects: []
+        }
+    },
+    methods:{
+        async fetchFeaturedProjects(){
+            const q = query(collection(db, "projects"), where("featured", "==", true))
+            const querySnapshot = await getDocs(q)
+            querySnapshot.forEach(doc => {
+                this.projects.push(doc.data())
+            })
+        }
+    },
+    mounted() {
+        this.fetchFeaturedProjects()
+    }
 }
+
 </script>
 
 <style scoped>
