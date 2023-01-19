@@ -16,7 +16,7 @@
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Mobile App Dvelopement</h2>
+                    <h2>Mobile App Developement</h2>
                     <p>Coming Soon</p>
                 </div>
             </div>
