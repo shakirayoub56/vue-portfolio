@@ -12,7 +12,7 @@
                         <a target="_blank" href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
                         <a target="_blank" href="https://wa.me/03202238490"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                    <a href="https://firebasestorage.googleapis.com/v0/b/react-e68ba.appspot.com/o/Tahir%20CV.pdf?alt=media" target="_blank" class="btn btn2">Download CV</a>
+                    <a href="https://firebasestorage.googleapis.com/v0/b/react-e68ba.appspot.com/o/Muhammad%20Tahir%20Ali.pdf?alt=media" target="_blank" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form @submit.prevent="handleSubmit()" name="contactForm">
