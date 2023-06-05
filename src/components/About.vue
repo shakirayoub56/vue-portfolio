@@ -3,11 +3,11 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-            <img src="../assets/about-coat.jpg" alt="">
+            <img src="../assets/IMG_20230312_001125_915.jpg" alt="">
         </div>
         <div class="about-col-2">
             <h1 class="subtitle">About Me</h1>
-            <p>I'm a MERN Stack Developer based in Karachi, Pakistan. I am in 3rd Year of my Bachelor of Computer Sciences from the University of Karachi. My objective is simply to be the best web developer that I can be and to contribute to the technology industry.</p>
+            <p>I am currently working as a Front-end Developer at Ladybird Web Solution  in Jammu. With strong problem-solving skills and extensive experience in creating and designing websites,I am highly motivated and skilled, with a Bachelor's degree in Computer Science and a passion for innovation</p>
             <div class="tab-titles">
               <p class="tab-links active-link" @click="(event) => openTab('skills', event)">Skills</p>
               <p class="tab-links" @click="(event) => openTab('education', event)">Education</p>
@@ -15,24 +15,25 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>Front-end Developer</span><br/>Building Single Page Application using Vanilla JS, React/Next JS, Vue JS</li>
-                <li><span>Back-end Developer</span><br/>Building Backend Server for Web and Mobile Applications</li>
-                <li><span>Other Programming Languages</span><br/>Java (Android Studio), Python(Django)</li>
+                <li><span>Programming Languages</span><br/>HTML, CSS, JavaScript, ReactJs, VueJs, Bootstrap, Rest Api, Redux, Vuex</li>
+                <li><span>Tools</span><br/>Postman, IDE editors, Git, Netlify, Github, MySql, Xampp</li>
+                <!-- <li><span>Other Programming Languages</span><br/>Java (Android Studio), Python(Django)</li> -->
               </ul>
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>Started in 2021</span><br/>MERN Stack Course from SMIT Karachi</li>
-                <li><span>2020 - 2023<sub>(Expected)</sub></span><br/>BSCS from University of Karachi</li>
-                <li><span>Completed in 2019</span><br/>Intermediate in Pre-Engineering with A Grade</li>
-                <li><span>Completed in 2017</span><br/>Matriculation in Computer Science with A1 Grade</li>
+                <li><span>Started in 2022</span><br/>MERN Stack Course from Masai School</li>
+                <li><span>2016 - 2020</span><br/>Btech. from University of Jammu</li>
+                <li><span>Completed in 2015</span><br/>Intermediate in Science from State Board</li>
+                <li><span>Completed in 2013</span><br/>Matriculation from State Borad</li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>Fresh</span><br/>MERN Stack Developer</li>
+                <li><span>Ladybird Web Solution</span><br/>I am currently working as a Front-end Developer at Ladybird Web Solution Pvt Ltd in Jammu</li>
               </ul>
             </div>
+            
         </div>
       </div>
     </div>
@@ -133,4 +134,5 @@ export default {
     font-size: 15px;
   }
 }
+
 </style>

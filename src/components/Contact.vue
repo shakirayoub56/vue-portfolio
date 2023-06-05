@@ -4,15 +4,15 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="subtitle">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>tahiralidc@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+92 320 2238490</p>
+                    <p><i class="fa-solid fa-envelope"></i>shakirayoubbhat@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7006354926</p>
                     <div class="social-icons">
-                        <a target="_blank" href="https://github.com/TahirAli32"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://linkedin.com/in/tahirali32"><i class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://stackoverflow.com/users/14988695/muhammad-tahir-ali"><i class="fa-brands fa-stack-overflow"></i></a>
-                        <a target="_blank" href="https://wa.me/03202238490"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a target="_blank" href="https://https://github.com/shakirayoub123.com/TahirAli32"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shakir-ayoub-412a30147/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://stackoverflow.com/users/18450548/shakir-ayoub"><i class="fa-brands fa-stack-overflow"></i></a>
+                        <a target="_blank" href="https://www.hackerrank.com/shakirayoubbhat?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
                     </div>
-                    <a href="https://firebasestorage.googleapis.com/v0/b/react-e68ba.appspot.com/o/Muhammad%20Tahir%20Ali.pdf?alt=media" target="_blank" class="btn btn2">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1I2GlnmmeFa9UP2ONUwjxLsfAjTCF3rIr/view?usp=drive_link" target="_blank" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form @submit.prevent="handleSubmit()" name="contactForm">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Portfolio of <span>Muhammad Tahir Ali</span> | Copyright {{currentYear}}</p>
+            <p>Portfolio of <span>Shakir Ayoub</span> | Copyright {{currentYear}}</p>
         </div>
     </div>
 </template>
