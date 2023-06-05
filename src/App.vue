@@ -5,10 +5,10 @@
 
 <script>
 addEventListener('scroll', () => {
-  if(window.scrollY > 300){
+  if (window.scrollY > 300) {
     document.getElementById('moveTop').classList.remove('hide')
   }
-  else{
+  else {
     document.getElementById('moveTop').classList.add('hide')
   }
 });
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -27,23 +27,28 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #262626; 
-}
-::-webkit-scrollbar-thumb {
-  background: #ff004d; 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #fa417c; 
+  box-shadow: inset 0 0 5px #262626;
 }
 
-.hide{
+::-webkit-scrollbar-thumb {
+  background: #ff004d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fa417c;
+}
+
+.hide {
   display: none;
 }
-#moveTop{
+
+#moveTop {
   position: fixed;
   z-index: 100;
   font-size: 30px;
@@ -51,18 +56,21 @@ html {
   right: 20px;
   bottom: 20px;
 }
-#moveTop:hover{
+
+#moveTop:hover {
   color: #ff004f;
 }
 
-.container{
+.container {
   padding: 10px 10%;
 }
-.row{
+
+.row {
   display: flex;
   justify-content: space-between;
 }
-.btn{
+
+.btn {
   display: block;
   margin: 50px auto 0 auto;
   width: fit-content;
@@ -72,25 +80,29 @@ html {
   color: #fff;
   transition: all .5s;
 }
-.btn:hover{
+
+.btn:hover {
   background: #ff004f;
 }
-.subtitle{
+
+.subtitle {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
 }
-body{
+
+body {
   overflow-x: hidden;
   background: #080808;
-  color:#fff;
+  color: #fff;
   font-family: 'Poppins', sans-serif;
 }
-a{
+
+a {
   color: inherit;
   text-decoration: none;
 }
-ul{
+
+ul {
   list-style: none;
-}
-</style>
+}</style>

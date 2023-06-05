@@ -1,9 +1,9 @@
 <template>
-    <Header />
-    <About />
-    <Services />
-    <Portfolio />
-    <Contact />
+  <Header />
+  <About />
+  <Services />
+  <Portfolio />
+  <Contact />
 </template>
 
 <script>

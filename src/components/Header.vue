@@ -117,7 +117,6 @@ nav ul li a:hover::after{
 @media only screen and (max-width: 600px){
   #header{
     /* background-image: url('../assets/phone-background.png'); */
-    background-image: url('../assets/phone-background-coat.jpg');
   }
   .header-text{
     margin-top: 80%;

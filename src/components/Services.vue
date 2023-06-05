@@ -31,16 +31,18 @@ export default {
 </script>
 
 <style scoped>
-#services{
+#services {
     padding: 30px 0 25px;
 }
-.services-list{
+
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+
+.services-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
@@ -48,45 +50,57 @@ export default {
     border-radius: 10px;
     transition: all .5s;
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list h2{
+
+.services-list h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list p{
+
+.services-list p {
     margin-bottom: 15px;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
 }
-@media only screen and (max-width: 600px){
-    #services{
+
+@media only screen and (max-width: 600px) {
+    #services {
         padding: 30px 0 20px;
     }
-    .services-list{
+
+    .services-list {
         gap: 25px;
     }
+
     .services-list div i {
         font-size: 28px;
         margin-bottom: 20px;
     }
+
     .services-list div h2 {
         font-size: 25px;
     }
-    .services-list div, .services-list div a, .services-list div a i {
+
+    .services-list div,
+    .services-list div a,
+    .services-list div a i {
         font-size: 12px;
         letter-spacing: .01rem;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
     }
-    .services-list{
+
+    .services-list {
         margin-top: 25px;
     }
-}
-</style>
+}</style>

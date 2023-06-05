@@ -7,12 +7,17 @@
                     <p><i class="fa-solid fa-envelope"></i>shakirayoubbhat@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+91 7006354926</p>
                     <div class="social-icons">
-                        <a target="_blank" href="https://https://github.com/shakirayoub123.com/TahirAli32"><i class="fa-brands fa-github"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/shakir-ayoub-412a30147/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a target="_blank" href="https://stackoverflow.com/users/18450548/shakir-ayoub"><i class="fa-brands fa-stack-overflow"></i></a>
-                        <a target="_blank" href="https://www.hackerrank.com/shakirayoubbhat?hr_r=1"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a target="_blank" href="https://https://github.com/shakirayoub123.com/TahirAli32"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/shakir-ayoub-412a30147/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a target="_blank" href="https://stackoverflow.com/users/18450548/shakir-ayoub"><i
+                                class="fa-brands fa-stack-overflow"></i></a>
+                        <a target="_blank" href="https://www.hackerrank.com/shakirayoubbhat?hr_r=1"><i
+                                class="fa-brands fa-hackerrank"></i></a>
                     </div>
-                    <a href="https://drive.google.com/file/d/1I2GlnmmeFa9UP2ONUwjxLsfAjTCF3rIr/view?usp=drive_link" target="_blank" class="btn btn2">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1I2GlnmmeFa9UP2ONUwjxLsfAjTCF3rIr/view?usp=drive_link"
+                        target="_blank" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form @submit.prevent="handleSubmit()" name="contactForm">
@@ -22,13 +27,13 @@
                         <button class="btn btn2" type="submit">Send Message</button>
                     </form>
                     <div class="confirmMessage none" id="confirmation">
-                        <h2 >Message Sent Successfully</h2>
+                        <h2>Message Sent Successfully</h2>
                     </div>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>Portfolio of <span>Shakir Ayoub</span> | Copyright {{currentYear}}</p>
+            <p>Portfolio of <span>Shakir Ayoub</span> | Copyright {{ currentYear }}</p>
         </div>
     </div>
 </template>
@@ -40,7 +45,7 @@ import { db } from '../firebase'
 
 let currentYear = new Date().getFullYear()
 
-export default{
+export default {
     name: 'Contact',
     data() {
         return {
@@ -48,7 +53,7 @@ export default{
         }
     },
     methods: {
-        async handleSubmit(){
+        async handleSubmit() {
             let form = document.forms['contactForm']
             let confirmation = document.getElementById("confirmation")
             let name = form[0].value
@@ -68,52 +73,65 @@ export default{
 </script>
 
 <style scoped>
-.none{
+.none {
     display: none;
 }
-.contact-left{
+
+.contact-left {
     flex-basis: 35%;
     margin-right: 20px;
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 65%;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     font-size: 30px;
     margin-right: 35px;
     display: inline-block;
     color: #ababab;
     transition: all .5s;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn2{
+
+.btn2 {
     display: inline-block;
     background-color: #ff004f;
 }
-.contact-right form{
+
+.contact-right form {
     width: 97%;
 }
-.confirmMessage h2{
+
+.confirmMessage h2 {
     color: #ff004f;
 }
-.confirmMessage p{
+
+.confirmMessage p {
     color: #fff;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
     border: none;
     outline: none;
@@ -124,13 +142,15 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form .btn2{
+
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin: 20px 0;
     cursor: pointer;
 }
-.copyright p{
+
+.copyright p {
     text-align: center;
     padding: 20px 0;
     background: #262626;
@@ -139,18 +159,21 @@ form .btn2{
     margin-top: 20px;
     letter-spacing: .08rem;
 }
-.copyright span{
+
+.copyright span {
     color: #ff004f
 }
-@media only screen and (max-width: 600px){
-    .row{
+
+@media only screen and (max-width: 600px) {
+    .row {
         display: block;
     }
-    .contact-left{
+
+    .contact-left {
         margin-bottom: 40px;
     }
-    .contact-left h1{
+
+    .contact-left h1 {
         font-size: 50px;
     }
-}
-</style>
+}</style>
